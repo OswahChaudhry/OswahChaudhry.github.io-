@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            background-color: #b3d9ff; 
+            color: #003366; 
+            font-family: 'Lora', serif; 
+        }
+        .navbar {
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif; 
+            font-weight: 600; 
+            color: #003366; 
+        }
+        .navbar-nav .nav-link {
+            font-family: 'Poppins', sans-serif; 
+            color: #a3c2f4; 
+        }
+        .navbar-nav .nav-link:hover {
+            color: #0056b3; 
+        }
+        .container {
+            padding-top: 20px;
+        }
+        #toggle-section {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">My Portfolio</a> <!-- Link to Home -->
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+      <li class="nav-item"><a class="nav-link" href="#interests">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="tutoring.html">Tutoring Service</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> <!-- Home Link -->
+      <li class="nav-item"><a class="nav-link" href="index.html#goals">Goals</a></li> <!-- Goals Link -->
+    </ul>
+  </div>
+</nav>
+
+<!-- About Me Section -->
+<section id="about" class="container mt-5">
+    <h1>About Me</h1>
+    <p>Welcome to my portfolio! I'm passionate about technology, web development, and design. In the future I am interested in majoring in Computer Science, and become a software engineer in a well established company or startup.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="interests" class="container mt-5">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript, Bootstrap</li>
+        <li>Web Development and UI/UX Design</li>
+        <li>Git and GitHub</li>
+    </ul>
+</section>
+
+<!-- Goals Section -->
+<section id="goals" class="container mt-5">
+    <h2>My Goals</h2>
+    <ul>
+        <li>Make a popular video game using my knowledge of computer science.</li>
+        <li>Sucessfully host a stem summer camp for kids in the summer.</li>
+        <li> Hopefully make a lasting positive change in the world of technology.</li>
+    </ul>
+</section>
+
+
+<!-- JavaScript Interaction Section -->
+<section id="toggle-section" class="container mt-5">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:chaudhryoswah@gmail.com">chaudhryoswah@gmail.com</a>.</p>
+</section>
+<button id="toggle-btn" class="btn btn-primary mt-3">Toggle Visibility</button>
+
+<!-- JavaScript for Toggle Interaction -->
+<script>
+    document.getElementById('toggle-btn').addEventListener('click', function() {
+        var section = document.getElementById('toggle-section');
+        if (section.style.display === 'none') {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
